@@ -112,3 +112,16 @@
     left: 370px;
     z-index: 2;
 }
+
+#container {
+    font-size: 200px;
+    color: black;
+}
+
+#jugar {
+    position: relative;
+    left: 750px;
+    top: 0px;
+    font-size: 70px;
+    color: black;
+}
