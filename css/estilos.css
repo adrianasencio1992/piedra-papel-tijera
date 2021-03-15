@@ -1,0 +1,256 @@
+    body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+    
+    header {
+        position: absolute;
+        width: 100%;
+        height: 200px;
+    }
+    
+    .header-h3 {
+        font-size: 20px;
+        color: grey;
+        font-weight: 100;
+        position: relative;
+        top: 3%;
+        left: 23%
+    }
+    
+    hr {
+        width: 700px;
+        height: 0.001%;
+        background-color: rgb(204, 204, 204);
+        position: relative;
+        left: -3px;
+    }
+    
+    .section1 {
+        position: absolute;
+        top: 14%;
+        left: 23%;
+    }
+    
+    .section1-div {
+        background-color: rgb(238, 238, 238);
+        width: 700px;
+        height: 300px;
+        position: relative;
+        top: -30px;
+        text-align: center;
+    }
+    
+    .section1-h1 {
+        font-size: 60px;
+        font-weight: 100;
+        position: relative;
+        top: 15%;
+    }
+    
+    .section1-h2 {
+        font-size: 20px;
+        font-weight: 100;
+        position: relative;
+        top: 5%;
+    }
+    
+    .section1-input {
+        width: 170px;
+        height: 50px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        color: rgb(255, 255, 255);
+        background-color: rgb(3, 136, 43);
+        position: relative;
+        top: 7%;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+    
+    .section1-input:hover {
+        background-color: rgb(3, 202, 63);
+    }
+    
+    .section1-div2 {
+        text-align: center;
+    }
+    
+    .section1-h3 {
+        font-size: 20px;
+        font-weight: 100;
+        position: relative;
+        top: -30px;
+    }
+    
+    .section1-h4 {
+        font-size: 14px;
+        font-weight: 100;
+        line-height: 5px;
+        position: relative;
+        top: -35px;
+        color: rgb(65, 64, 64);
+    }
+    /* Estilos para nombre.html*/
+    
+    .section1-input-nombre {
+        width: 500px;
+        height: 50px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        color: rgb(0, 0, 0);
+        position: relative;
+        top: 70px;
+        left: 0%;
+        border-radius: 10px;
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .section1-h1-nombre {
+        font-size: 30px;
+        font-weight: 100;
+        position: relative;
+        top: 20%;
+    }
+    
+    .section1-div-nombre {
+        background-color: rgb(238, 238, 238);
+        width: 700px;
+        height: 300px;
+        position: relative;
+        top: -5px;
+        text-align: center;
+    }
+    
+    .section1-input-nombre2 {
+        width: 500px;
+        height: 50px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        color: rgb(255, 255, 255);
+        background-color: rgb(3, 136, 43);
+        position: relative;
+        top: 30%;
+        border-radius: 10px;
+        font-size: 20px;
+    }
+    
+    .section1-input-nombre2:hover {
+        background-color: rgb(3, 202, 63);
+    }
+    
+    .section1-div2-nombre {
+        text-align: center;
+        position: relative;
+        top: 25px;
+    }
+    /* Estilos de juego*/
+    
+    .div-juego {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 20px;
+        left: 120px;
+        height: 130px;
+        width: 200px;
+        background-color: rgb(245, 245, 245);
+        border: 1px solid rgb(212, 212, 212);
+        border-radius: 10px;
+    }
+    
+    .juego-2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: -112px;
+        left: 400px;
+        height: 130px;
+        width: 200px;
+        background-color: rgb(245, 245, 245);
+        border: 1px solid rgb(212, 212, 212);
+        border-radius: 10px;
+    }
+    
+    .input-1 {
+        position: relative;
+        width: 180px;
+        height: 35px;
+        background-color: rgb(255, 255, 255);
+        outline: none;
+        border: 1px solid rgb(201, 201, 201);
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 15px;
+        font-weight: 100;
+        margin-bottom: 5px;
+    }
+    
+    .input-1:hover {
+        background-color: rgb(238, 238, 238);
+    }
+    
+    .input-2 {
+        position: relative;
+        width: 180px;
+        height: 35px;
+        background-color: rgb(255, 255, 255);
+        outline: none;
+        border: 1px solid rgb(201, 201, 201);
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 15px;
+        font-weight: 100;
+        margin-bottom: 5px;
+    }
+    
+    .input-2:hover {
+        background-color: rgb(238, 238, 238);
+    }
+    
+    .input-3 {
+        position: relative;
+        width: 180px;
+        height: 35px;
+        background-color: rgb(255, 255, 255);
+        outline: none;
+        border: 1px solid rgb(201, 201, 201);
+        cursor: pointer;
+        border-radius: 5px;
+        font-size: 15px;
+        font-weight: 100;
+        margin-bottom: 5px;
+    }
+    
+    .input-3:hover {
+        background-color: rgb(238, 238, 238);
+    }
+    
+    .section1-h1-juego {
+        font-size: 30px;
+        font-weight: 100;
+        position: relative;
+        top: 6%;
+    }
+    
+    #resultado {
+        position: relative;
+        top: 10px;
+        left: 210px;
+        display: flex;
+        flex-direction: row;
+        font-size: 40px;
+    }
+    
+    #resultado-perdedor {
+        position: relative;
+        left: 260px;
+    }
