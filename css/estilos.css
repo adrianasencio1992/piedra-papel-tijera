@@ -95,7 +95,7 @@
     }
     /* Estilos para nombre.html*/
     
-    .section1-input-nombre {
+    #section1-input-nombre {
         width: 500px;
         height: 50px;
         border: none;
@@ -239,6 +239,7 @@
         font-weight: 100;
         position: relative;
         top: 6%;
+        left: -80px;
     }
     
     #resultado {
@@ -253,4 +254,18 @@
     #resultado-perdedor {
         position: relative;
         left: 260px;
+    }
+    
+    #saludo {
+        position: relative;
+        top: -42px;
+        left: 63px;
+        font-size: 30px;
+        margin: 0px;
+    }
+    
+    #result {
+        position: relative;
+        top: -115px;
+        left: 0px;
     }
