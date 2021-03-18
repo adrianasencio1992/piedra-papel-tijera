@@ -4,25 +4,62 @@ let derrota = 0;
 
 function clicar() {
     jugar();
+    borrar();
 }
 
 function clicar2() {
     jugar2();
+    borrar();
 }
 
 function clicar3() {
     jugar3();
+    borrar();
 }
 
 function clicar4() {
-    location.href = 'file:///C:/Users/adria/OneDrive/Escritorio/Trabajo/juego/juego.html'
     enviarSaludo();
+    cambiarZindex();
+    setTimeout('cuentaAtras2()', 1000);
+    setTimeout('cuentaAtrasNumero()', 2000);
+    setTimeout('cuentaAtrasNumero2()', 3000);
+    setTimeout('cuentaAtrasNumero3()', 4000);
+    setTimeout('empezarJuego()', 5000);
 }
 
 function enviarSaludo() {
-    let nombre = document.querySelector("#section1-input-nombre");
-    let saludo = document.querySelector("#saludo");
-    nombre.innerHTML = nombre.value;
+    let nombre = document.getElementById('section1-input-nombre').value;
+    let saludo = document.getElementById('bienvenido').innerHTML = "Bienvenido " + nombre + "."
+
+}
+
+function cambiarZindex() {
+    document.getElementById("section1-div-nombre-copia").style.zIndex = 10;
+}
+
+function cuentaAtras2() {
+    document.getElementById("bienvenido").style.fontSize = "40px";
+    let empezar = document.getElementById('bienvenido').innerHTML = "El juego comienza en..."
+}
+
+function cuentaAtrasNumero() {
+    document.getElementById("numero").style.zIndex = 10;
+}
+
+function cuentaAtrasNumero2() {
+    let numero1 = document.getElementById('numero').innerHTML = "2"
+}
+
+function cuentaAtrasNumero3() {
+    let numero2 = document.getElementById('numero').innerHTML = "1"
+}
+
+function empezarJuego() {
+    location.href = 'file:///C:/Users/adria/OneDrive/Escritorio/Trabajo/juego/juego.html'
+}
+
+function borrar() {
+    let winner = document.getElementById('result').innerHTML = "";
 }
 
 function jugar() {
@@ -102,29 +139,30 @@ function jugar() {
 
     if (piedra < numeroAleatorio) {
         console.log("has ganado");
-        if (victoria <= 5) {
+        if (victoria < 5) {
             victoria++
-            document.getElementById('resultado-ganador').innerHTML = victoria;
-            document.getElementById('result').innerHTML = "¡Has ganado!";
+            let cambiarNumero = setTimeout(function() { document.getElementById('resultado-ganador').innerHTML = victoria; }, 1800);
+            let winner = setTimeout(function() { document.getElementById('result').innerHTML = "¡Has ganado!"; }, 1800);
         }
         if (victoria === 5) {
 
-            let detener = setTimeout(function() { alert("Has Ganado"); }, 100);
+            let detener = setTimeout(function() { document.getElementById('result-acabar').innerHTML = "¡Winner!"; }, 1800);
+            let volver = setTimeout(function() { location.href = 'file:///C:/Users/adria/OneDrive/Escritorio/Trabajo/juego/index.html' }, 4000);
 
         }
     } else if (piedra == numeroAleatorio) {
         console.log("has empatado");
-        document.getElementById('result').innerHTML = "¡Has empatado!";
+        let winner = setTimeout(function() { document.getElementById('result').innerHTML = "¡Has empatado!"; }, 1900);
     } else if (piedra > numeroAleatorio) {
         console.log("has perdido");
-        if (derrota <= 5) {
+        if (derrota < 5) {
             derrota++
-            document.getElementById('resultado-perdedor').innerHTML = derrota;
-            document.getElementById('result').innerHTML = "¡Has perdido!";
+            let cambiarNumero = setTimeout(function() { document.getElementById('resultado-perdedor').innerHTML = derrota; }, 1700);
+            let winner = setTimeout(function() { document.getElementById('result').innerHTML = "¡Has perdido!"; }, 1700);
         }
         if (derrota === 5) {
-
-            let detener = setTimeout(function() { alert("Has Perdido"); }, 100);
+            let detener = setTimeout(function() { document.getElementById('result-acabar').innerHTML = "¡Loser!"; }, 1700);
+            let volver = setTimeout(function() { location.href = 'file:///C:/Users/adria/OneDrive/Escritorio/Trabajo/juego/index.html' }, 4000);
 
         }
     } else {
@@ -204,30 +242,32 @@ function jugar2() {
 
     if (papel < numeroAleatorio) {
         console.log("Has perdido");
-        if (derrota <= 5) {
+        if (derrota < 5) {
             derrota++
-            document.getElementById('resultado-perdedor').innerHTML = derrota;
-            document.getElementById('result').innerHTML = "¡Has perdido!";
+            let cambiarNumero = setTimeout(function() { document.getElementById('resultado-perdedor').innerHTML = derrota; }, 1800);
+            let winner = setTimeout(function() { document.getElementById('result').innerHTML = "¡Has perdido!"; }, 1800);
         }
         if (derrota === 5) {
 
-            let detener = setTimeout(function() { alert("Has Perdido"); }, 100);
+            let detener = setTimeout(function() { document.getElementById('result-acabar').innerHTML = "¡Loser!"; }, 1800);
+            let volver = setTimeout(function() { location.href = 'file:///C:/Users/adria/OneDrive/Escritorio/Trabajo/juego/index.html' }, 4000);
 
         }
 
     } else if (papel == numeroAleatorio) {
         console.log("Has empatado");
-        document.getElementById('result').innerHTML = "¡Has empatado!";
+        let winner = setTimeout(function() { document.getElementById('result').innerHTML = "¡Has empatado!"; }, 1700);
     } else if (papel > numeroAleatorio) {
         console.log("Has ganado");
-        if (victoria <= 5) {
+        if (victoria < 5) {
             victoria++
-            document.getElementById('resultado-ganador').innerHTML = victoria;
-            document.getElementById('result').innerHTML = "¡Has ganado!";
+            let cambiarNumero = setTimeout(function() { document.getElementById('resultado-ganador').innerHTML = victoria; }, 1600);
+            let winner = setTimeout(function() { document.getElementById('result').innerHTML = "¡Has ganado!"; }, 1600);
         }
         if (victoria === 5) {
 
-            let detener = setTimeout(function() { alert("Has Ganado"); }, 100);
+            let detener = setTimeout(function() { document.getElementById('result-acabar').innerHTML = "¡Winner!"; }, 1600);
+            let volver = setTimeout(function() { location.href = 'file:///C:/Users/adria/OneDrive/Escritorio/Trabajo/juego/index.html' }, 4000);
 
         }
     } else {
@@ -312,29 +352,31 @@ function jugar3() {
 
     if (tijera < numeroAleatorio) {
         console.log("Has perdido")
-        if (derrota <= 5) {
+        if (derrota < 5) {
             derrota++
-            document.getElementById('resultado-perdedor').innerHTML = derrota;
-            document.getElementById('result').innerHTML = "¡Has perdido!";
+            let cambiarNumero = setTimeout(function() { document.getElementById('resultado-perdedor').innerHTML = derrota; }, 1900);
+            let winner = setTimeout(function() { document.getElementById('result').innerHTML = "¡Has perdido!"; }, 1900);
         }
         if (derrota === 5) {
 
-            let detener = setTimeout(function() { alert("Has Perdido"); }, 100);
+            let detener = setTimeout(function() { document.getElementById('result-acabar').innerHTML = "¡Loser!"; }, 1900);
+            let volver = setTimeout(function() { location.href = 'file:///C:/Users/adria/OneDrive/Escritorio/Trabajo/juego/index.html' }, 4000);
 
         }
     } else if (tijera == numeroAleatorio) {
         console.log("Has empatado")
-        document.getElementById('result').innerHTML = "¡Has empatado!";
+        let winner = setTimeout(function() { document.getElementById('result').innerHTML = "¡Has empatado!"; }, 1800);
     } else if (tijera > numeroAleatorio) {
         console.log("Has ganado")
-        if (victoria <= 5) {
+        if (victoria < 5) {
             victoria++
-            document.getElementById('resultado-ganador').innerHTML = victoria;
-            document.getElementById('result').innerHTML = "¡Has ganado!";
+            let cambiarNumero = setTimeout(function() { document.getElementById('resultado-ganador').innerHTML = victoria; }, 1700);
+            let winner = setTimeout(function() { document.getElementById('result').innerHTML = "¡Has ganado!"; }, 1700);
         }
         if (victoria === 5) {
 
-            let detener = setTimeout(function() { alert("Has Ganado"); }, 100);
+            let detener = setTimeout(function() { document.getElementById('result-acabar').innerHTML = "¡Winner!"; }, 1700);
+            let volver = setTimeout(function() { location.href = 'file:///C:/Users/adria/OneDrive/Escritorio/Trabajo/juego/index.html' }, 4000);
 
         }
     } else {

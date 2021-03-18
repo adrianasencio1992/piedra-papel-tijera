@@ -108,6 +108,7 @@
         border-radius: 10px;
         font-size: 20px;
         text-align: center;
+        z-index: 5;
     }
     
     .section1-h1-nombre {
@@ -115,15 +116,17 @@
         font-weight: 100;
         position: relative;
         top: 20%;
+        z-index: 5;
     }
     
-    .section1-div-nombre {
+    #section1-div-nombre {
         background-color: rgb(238, 238, 238);
         width: 700px;
         height: 300px;
         position: relative;
         top: -5px;
         text-align: center;
+        z-index: 5;
     }
     
     .section1-input-nombre2 {
@@ -138,6 +141,7 @@
         top: 30%;
         border-radius: 10px;
         font-size: 20px;
+        z-index: 5;
     }
     
     .section1-input-nombre2:hover {
@@ -147,11 +151,74 @@
     .section1-div2-nombre {
         text-align: center;
         position: relative;
-        top: 25px;
+        top: -502px;
+        z-index: 5;
+    }
+    
+    #section1-div-nombre-copia {
+        position: relative;
+        top: -305px;
+        width: 700px;
+        height: 300px;
+        z-index: 0;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(238, 238, 238);
+    }
+    
+    #bienvenido {
+        z-index: 0;
+        position: relative;
+        top: 30px;
+        left: 30px;
+        font-size: 100px;
+        display: inline;
+        -webkit-transform: rotate(-10deg);
+        color: rgb(0, 0, 0);
+        margin: 0 auto;
+        text-align: center;
+        font-weight: 700;
+        font: italic bold 100px Georgia, Serif;
+        text-shadow: -4px 3px 0 #bdbdbd, -14px 7px 0 #ffffff;
+    }
+    
+    #numero {
+        z-index: 0;
+        position: relative;
+        top: -550px;
+        left: 500px;
+        font-size: 100px;
+        display: inline;
+        -webkit-transform: rotate(-10deg);
+        color: rgb(0, 0, 0);
+        margin: 0 auto;
+        text-align: center;
+        font-weight: 700;
+        font: italic bold 200px Georgia, Serif;
+        text-shadow: -4px 3px 0 #a8a8a8, -14px 7px 0 #ffffff;
+        width: 0px;
+        height: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
     }
     /* Estilos de juego*/
     
     .div-juego {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: 20px;
+        left: 120px;
+        height: 130px;
+        width: 200px;
+        background-color: rgb(245, 245, 245);
+        border: 1px solid rgb(212, 212, 212);
+        border-radius: 10px;
+    }
+    
+    .div-juego-2 {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -239,7 +306,7 @@
         font-weight: 100;
         position: relative;
         top: 6%;
-        left: -80px;
+        left: -0px;
     }
     
     #resultado {
@@ -268,4 +335,24 @@
         position: relative;
         top: -115px;
         left: 0px;
+    }
+    
+    #result-acabar {
+        z-index: 0;
+        position: relative;
+        top: -100px;
+        left: 0px;
+        font-size: 100px;
+        display: inline;
+        -webkit-transform: rotate(-10deg);
+        color: rgb(0, 0, 0);
+        margin: 0 auto;
+        text-align: center;
+        font-weight: 700;
+        font: italic bold 100px Georgia, Serif;
+        text-shadow: -4px 3px 0 #a8a8a8, -14px 7px 0 #ffffff;
+        width: 0px;
+        height: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
     }
