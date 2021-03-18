@@ -55,7 +55,7 @@ function cuentaAtrasNumero3() {
 }
 
 function empezarJuego() {
-    location.href = 'file:///C:/Users/adria/OneDrive/Escritorio/Trabajo/juego/juego.html'
+    location.href = 'juego.html'
 }
 
 function borrar() {
@@ -147,7 +147,7 @@ function jugar() {
         if (victoria === 5) {
 
             let detener = setTimeout(function() { document.getElementById('result-acabar').innerHTML = "¡Winner!"; }, 1800);
-            let volver = setTimeout(function() { location.href = 'file:///C:/Users/adria/OneDrive/Escritorio/Trabajo/juego/index.html' }, 4000);
+            let volver = setTimeout(function() { location.href = 'index.html' }, 4000);
 
         }
     } else if (piedra == numeroAleatorio) {
@@ -162,7 +162,7 @@ function jugar() {
         }
         if (derrota === 5) {
             let detener = setTimeout(function() { document.getElementById('result-acabar').innerHTML = "¡Loser!"; }, 1700);
-            let volver = setTimeout(function() { location.href = 'file:///C:/Users/adria/OneDrive/Escritorio/Trabajo/juego/index.html' }, 4000);
+            let volver = setTimeout(function() { location.href = 'index.html' }, 4000);
 
         }
     } else {
@@ -250,7 +250,7 @@ function jugar2() {
         if (derrota === 5) {
 
             let detener = setTimeout(function() { document.getElementById('result-acabar').innerHTML = "¡Loser!"; }, 1800);
-            let volver = setTimeout(function() { location.href = 'file:///C:/Users/adria/OneDrive/Escritorio/Trabajo/juego/index.html' }, 4000);
+            let volver = setTimeout(function() { location.href = 'index.html' }, 4000);
 
         }
 
@@ -267,7 +267,7 @@ function jugar2() {
         if (victoria === 5) {
 
             let detener = setTimeout(function() { document.getElementById('result-acabar').innerHTML = "¡Winner!"; }, 1600);
-            let volver = setTimeout(function() { location.href = 'file:///C:/Users/adria/OneDrive/Escritorio/Trabajo/juego/index.html' }, 4000);
+            let volver = setTimeout(function() { location.href = 'index.html' }, 4000);
 
         }
     } else {
@@ -360,7 +360,7 @@ function jugar3() {
         if (derrota === 5) {
 
             let detener = setTimeout(function() { document.getElementById('result-acabar').innerHTML = "¡Loser!"; }, 1900);
-            let volver = setTimeout(function() { location.href = 'file:///C:/Users/adria/OneDrive/Escritorio/Trabajo/juego/index.html' }, 4000);
+            let volver = setTimeout(function() { location.href = 'index.html' }, 4000);
 
         }
     } else if (tijera == numeroAleatorio) {
@@ -376,7 +376,7 @@ function jugar3() {
         if (victoria === 5) {
 
             let detener = setTimeout(function() { document.getElementById('result-acabar').innerHTML = "¡Winner!"; }, 1700);
-            let volver = setTimeout(function() { location.href = 'file:///C:/Users/adria/OneDrive/Escritorio/Trabajo/juego/index.html' }, 4000);
+            let volver = setTimeout(function() { location.href = 'index.html' }, 4000);
 
         }
     } else {
